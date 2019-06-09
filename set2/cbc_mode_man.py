@@ -68,7 +68,5 @@ def aes_cbc_dec(iv,CT,key): #using AES ECB
  
 key="YELLOW SUBMARINE"
 iv=chr(0)*16
-#print aes_cbc_enc(iv,pkcs7_padding("my password is 952145",16),key)
-#print aes_cbc_dec(iv,aes_cbc_enc(iv,pkcs7_padding("my password is kokoki",16),key),key)
 padded_data=pkcs7_padding(base64.b64decode(open('10.txt','r').read().strip()),16)
 print aes_cbc_dec(iv,padded_data,key)
