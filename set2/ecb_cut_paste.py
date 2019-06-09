@@ -45,5 +45,3 @@ def ecb_cut_paste(email):
   return  decrypt_aes(hijacked_profile)
 
 print ecb_cut_paste('Nops@NOPs.com')  #13 bytes email
-#print k_v_parsiong_routine("k=nops&email=kaito@fck.me&prof=NOOB")
-#print profile_for('kimo@nops.com')
